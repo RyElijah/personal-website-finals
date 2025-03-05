@@ -1,13 +1,12 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import PersonalProfile from './components/PersonalProfile.vue';
 
-import App from './App.vue'
+// Import Swiper CSS globally
+import 'swiper/css';
+import 'swiper/css/effect-cards'; // Add other Swiper effect styles if needed
 
-import PersonalProfile from './components/PersonalProfile.vue'
+const app = createApp(App);
+app.component('personal-profile', PersonalProfile);
 
-
-
-const app = createApp(App)
-app.component('personal-profile', PersonalProfile)
-
-
-app.mount('#app')
+app.mount('#app');
