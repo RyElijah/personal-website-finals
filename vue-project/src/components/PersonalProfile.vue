@@ -150,6 +150,9 @@
 </template>
 
 <script>
+
+import Swiper from 'swiper';
+
 document.addEventListener('DOMContentLoaded', function() {
     function openModal(modalId) {
         const modal = document.getElementById(modalId);
