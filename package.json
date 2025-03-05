@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "slider": "^1.0.4"
+    "slider": "^1.0.4",
+    "swiper": "^11.2.5"
   }
 }
