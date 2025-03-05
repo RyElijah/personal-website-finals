@@ -152,11 +152,13 @@
     <script src="js/modal.js"></script>
 </body>
 
+<Comments />
 
 </template>
 
 
 <script>
+import Comments from './Comments.vue';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
