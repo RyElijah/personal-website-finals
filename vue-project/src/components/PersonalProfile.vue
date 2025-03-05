@@ -1,4 +1,11 @@
 <template>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">  
+</head>
 <body>
     <section>
         <div class="circle"></div>
@@ -126,9 +133,9 @@
 
             
                 <ul class="sci">
-                    <li><a href="https://www.facebook.com/ryanelijah.luar/"><img src="../components/images/efbi.png" alt="Facebook"></a></li>  
-                    <li><a href="https://www.linkedin.com/in/ryan-elijah-luar-a99171250/"><img src="../components/images/linkedin.png" alt="LinkedIn"></a></li> 
-                    <li><a href="https://github.com/RyElijah"><img src="../components/images/github1.png" alt="GitHub"></a></li> 
+                    <li><a href="https://www.facebook.com/ryanelijah.luar/"><img src="images/efbi.png" alt="Facebook"></a></li>  
+                    <li><a href="https://www.linkedin.com/in/ryan-elijah-luar-a99171250/"><img src="images/linkedin.png" alt="LinkedIn"></a></li> 
+                    <li><a href="https://github.com/RyElijah"><img src="images/github1.png" alt="GitHub"></a></li> 
                 </ul>
             </div>
 
@@ -136,22 +143,25 @@
             <div class="imagebox">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../components/images/ryanpic1.jpg" alt="Image 1"></div>
-                        <div class="swiper-slide"><img src="../components/images/ryanpic2.jpg" alt="Image 2"></div>
-                        <div class="swiper-slide"><img src="../components/images/ryanpic3.jpg" alt="Image 3"></div>
-                        <div class="swiper-slide"><img src="../components/images/ryanpic5.jpg" alt="Image 4"></div>
+                        <div class="swiper-slide"><img src="images/ryanpic1.jpg" alt="Image 1"></div>
+                        <div class="swiper-slide"><img src="images/ryanpic2.jpg" alt="Image 2"></div>
+                        <div class="swiper-slide"><img src="images/ryanpic3.jpg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="images/ryanpic5.jpg" alt="Image 4"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/modal.js"></script>
 </body>
+
 </template>
 
 <script>
-
-import Swiper from 'swiper';
 document.addEventListener('DOMContentLoaded', function() {
     function openModal(modalId) {
         const modal = document.getElementById(modalId);
@@ -173,38 +183,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Helper function to attach event listeners safely
-    function safeAddEventListener(id, event, callback) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.addEventListener(event, callback);
+    function setupModalLink(linkId, modalId) {
+        const link = document.getElementById(linkId);
+        if (link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                openModal(modalId);
+            });
         }
     }
 
-    safeAddEventListener('educationLink', 'click', function(event) {
-        event.preventDefault();
-        openModal('educationModal');
-    });
-
-    safeAddEventListener('goalsLink', 'click', function(event) {
-        event.preventDefault();
-        openModal('goalsModal');
-    });
-
-    safeAddEventListener('hobbiesLink', 'click', function(event) {
-        event.preventDefault();
-        openModal('hobbiesModal');
-    });
-
-    safeAddEventListener('schoolsLink', 'click', function(event) {
-        event.preventDefault();
-        openModal('schoolsModal');
-    });
-
-    safeAddEventListener('learnMoreLink', 'click', function(event) {
-        event.preventDefault();
-        openModal('aboutModal');
-    });
+    setupModalLink('educationLink', 'educationModal');
+    setupModalLink('goalsLink', 'goalsModal');
+    setupModalLink('hobbiesLink', 'hobbiesModal');
+    setupModalLink('schoolsLink', 'schoolsModal');
+    setupModalLink('learnMoreLink', 'aboutModal');
 
     document.querySelectorAll('.close-btn').forEach(button => {
         button.addEventListener('click', function() {
@@ -215,25 +208,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize Swiper after DOM is loaded
-    setTimeout(() => {
-        if (document.querySelector(".mySwiper")) {
-            new Swiper(".mySwiper", {
-                effect: "cards",
-                grabCursor: true,
-                loop: true,
-            });
-        }
-    }, 100);
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        loop: true,
+    });
 });
-
-
 </script>
-
-<script>
-
-</script>
-
 
 <style>
 
