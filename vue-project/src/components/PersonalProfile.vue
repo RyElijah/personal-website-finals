@@ -146,7 +146,7 @@
         </div>
     </section>
 
- 
+ <Comments />
 
     <script src="js/swiper.js"></script>
     <script src="js/modal.js"></script>
