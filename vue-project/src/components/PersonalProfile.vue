@@ -136,10 +136,10 @@
             <div class="imagebox">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../components/images/ryanpic6.jpg" alt="Image 1"></div>
+                        <div class="swiper-slide"><img src="../components/images/ryanpic1.jpg" alt="Image 1"></div>
                         <div class="swiper-slide"><img src="../components/images/ryanpic2.jpg" alt="Image 2"></div>
                         <div class="swiper-slide"><img src="../components/images/ryanpic3.jpg" alt="Image 3"></div>
-                        <div class="swiper-slide"><img src="../components/images/ryanpic5.jpg" alt="Image 4"></div>
+                        <div class="swiper-slide"><img src="../components/images/ryanpic6.jpg" alt="Image 4"></div>
                     </div>
                 </div>
             </div>
