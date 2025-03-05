@@ -10,7 +10,8 @@
         <li><a href="#" id="goalsLink">Goals </a></li>
         <li><a href="#" id="hobbiesLink">Hobbies </a></li>
         <li><a href="#" id="schoolsLink">Schools </a></li>
-        <RouterLink to="/comments">Comments</RouterLink>
+        <li><RouterLink to="/comments">Comments</RouterLink></li>
+        
     </ul>
 </header>
 
