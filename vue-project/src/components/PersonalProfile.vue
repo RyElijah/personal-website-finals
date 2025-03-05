@@ -154,9 +154,7 @@
     </section>
 
  
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/modal.js"></script>
+
 </body>
 
 </template>
