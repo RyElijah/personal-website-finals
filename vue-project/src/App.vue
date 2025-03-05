@@ -1,11 +1,9 @@
 <template>
-  <PersonalProfile />
+  <personal-profile/> <br>
 </template>
 
-<script setup>
-import PersonalProfile from './components/PersonalProfile.vue';
-</script>
+<script></script>
 
-<style >
-
-</style>
+<style>
+ 
+</style>   
