@@ -1,232 +1,113 @@
 <template>
-<body>
-    <section>
+    <body>
+      <section>
         <div class="circle"></div>
-
- 
-       <header>
-    <ul class="navigation">
-        <li><a href="#" id="educationLink">Education</a></li>
-        <li><a href="#" id="goalsLink">Goals </a></li>
-        <li><a href="#" id="hobbiesLink">Hobbies </a></li>
-        <li><a href="#" id="schoolsLink">Schools </a></li>
-    </ul>
-</header>
-
-<div class="modal" id="aboutModal">
-  <div class="modal-content">
-      <h2>About Me</h2>
-      <p>My name is Ryan Elijah Luar and this is my experience throughout my course. <br> <br> My Experience from my course has a lot of ups and downs. I learned how to code and what are their functions and what are their purposes and also I crammed a lot of subjects during my freshman due to being overwhelmed. But overall, taking IT course is a great choice.</p>
-      <button class="close-btn">Close</button>
-  </div>
-</div>
-
-<div class="modal" id="educationModal">
-  <div class="modal-content">
-      <h2>Education</h2>
-      <p>I am currently studying at Asia Pacific College, pursuing a Bachelor of Science in Information Technology, specializing in Mobile and Internet Applications.</p>
-      <button class="close-btn">Close</button>
-  </div>
-</div>
-
-<div class="modal" id="goalsModal">
-  <div class="modal-content">
-      <h2>Goals in Life</h2>
-      <ol class="goals-list">
-          <li>To get rich</li>
-          <li>To have my dream house and bike</li>
-          <li>To graduate college</li>
-      </ol>
-      <button class="close-btn">Close</button>
-  </div>
-</div>
-
-<div class="modal" id="hobbiesModal">
-  <div class="modal-content">
-      <h2>Hobbies & Interests</h2>
-      <table class="hobbies-table">
-          <thead>
-              <tr>
-                  <th>Hobbies</th>
-                  <th>Interests</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Playing Basketball</td>
-                  <td>Dancing</td>
-              </tr>
-              <tr>
-                  <td>Riding Motorcycle</td>
-                  <td>Exploring</td>
-              </tr>
-              <tr>
-                  <td>Going to the gym</td>
-                  <td></td>
-              </tr>
-          </tbody>
-      </table>
-      <button class="close-btn">Close</button>
-  </div>
-</div>
-
-<div class="modal" id="schoolsModal">
-  <div class="modal-content">
-      <h2>Education & Achievements</h2>
-      <table class="schools-table">
-          <thead>
-              <tr>
-                  <th>Education / Achievements</th>
-                  <th>Year</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Sto Niño Catholic School (Elementary)</td>
-                  <td>2015 - 2016</td>
-              </tr>
-              <tr>
-                  <td>Sto Niño Catholic School (JHS)</td>
-                  <td>2017 - 2021</td>
-              </tr>
-              <tr>
-                  <td>With Honors (JHS)</td>
-                  <td>2020 - 2021</td>
-              </tr>
-              <tr>
-                  <td>Asia Pacific College (SHS)</td>
-                  <td>2021 - 2023</td>
-              </tr>
-              <tr>
-                  <td>Asia Pacific College (College)</td>
-                  <td>2023 - Current</td>
-              </tr>
-              <tr>
-                  <td>Asia Pacific College Honor Student</td>
-                  <td>2023 - 2024</td>
-              </tr>
-          </tbody>
-      </table>
-      <button class="close-btn">Close</button>
-  </div>
-</div>  
-
-
-
-
-
+        <header>
+          <ul class="navigation">
+            <li><a href="#" id="educationLink">Education</a></li>
+            <li><a href="#" id="goalsLink">Goals</a></li>
+            <li><a href="#" id="hobbiesLink">Hobbies</a></li>
+            <li><a href="#" id="schoolsLink">Schools</a></li>
+          </ul>
+        </header>
+        
         <div class="content">
-            <div class="textBox">
-                <h2>Welcome to my Homepage!</h2>
-                <p>
-                    I am a student in Asia Pacific College taking Bachelor of Science in Information Technology specialized in Mobile and Internet Applications ...
-                    <br>
-                    <a id="learnMoreLink" href="" class="buttonlearn">Learn more about me!</a>
-                </p>
-
-            
-                <ul class="sci">
-                    <li><a href="https://www.facebook.com/ryanelijah.luar/"><img src="../components/images/efbi.png" alt="Facebook"></a></li>  
-                    <li><a href="https://www.linkedin.com/in/ryan-elijah-luar-a99171250/"><img src="../components/images/linkedin.png" alt="LinkedIn"></a></li> 
-                    <li><a href="https://github.com/RyElijah"><img src="../components/images/github1.png" alt="GitHub"></a></li> 
-                </ul>
-            </div>
-
-         
-            <div class="imagebox">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../components/images/ryanpic1.jpg" alt="Image 1"></div>
-                        <div class="swiper-slide"><img src="../components/images/ryanpic2.jpg" alt="Image 2"></div>
-                        <div class="swiper-slide"><img src="../components/images/ryanpic3.jpg" alt="Image 3"></div>
-                        <div class="swiper-slide"><img src="../components/images/ryanpic5.jpg" alt="Image 4"></div>
-                    </div>
-                </div>
-            </div>
+          <div class="textBox">
+            <h2>Welcome to my Homepage!</h2>
+            <p>
+              I am a student in Asia Pacific College taking Bachelor of Science in Information Technology specialized in Mobile and Internet Applications ...
+              <br>
+              <a id="learnMoreLink" href="" class="buttonlearn">Learn more about me!</a>
+            </p>
+            <ul class="sci">
+              <li><a href="https://www.facebook.com/ryanelijah.luar/"><img src="../components/images/efbi.png" alt="Facebook"></a></li>
+              <li><a href="https://www.linkedin.com/in/ryan-elijah-luar-a99171250/"><img src="../components/images/linkedin.png" alt="LinkedIn"></a></li>
+              <li><a href="https://github.com/RyElijah"><img src="../components/images/github1.png" alt="GitHub"></a></li>
+            </ul>
+          </div>
         </div>
-    </section>
-
- 
-
-    <script src="js/swiper.js"></script>
-    <script src="js/modal.js"></script>
-</body>
-
-
-</template>
-
-
-<script>
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-
-document.addEventListener('DOMContentLoaded', function() {
-    function openModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.style.display = 'block';
-            setTimeout(() => {
-                modal.classList.add('show');
-            }, 10);
-        }
+  
+        <!-- Comment Section -->
+        <div class="comments-container">
+          <div class="comment-form">
+            <h2>Leave a Comment</h2>
+            <form @submit.prevent="submitComment" id="commentForm">
+              <input type="text" id="name" v-model="name" placeholder="Your Name" required>
+              <textarea id="comment" v-model="comment" placeholder="Your Comment" rows="4" required></textarea>
+              <button type="submit" class="submit-btn">Submit Comment</button>
+              <div v-if="submissionStatus" class="mt-2">{{ submissionStatus }}</div>
+            </form>
+          </div>
+          
+          <div class="comment-list" id="commentList">
+            <div v-for="comment in comments" :key="comment.id" class="comment">
+              <div class="comment-header">
+                <span class="comment-name">{{ comment.name }}</span>
+                <span class="comment-date">{{ formatDate(comment.created_at) }}</span>
+              </div>
+              <p>{{ comment.comment }}</p>
+            </div>
+          </div>
+        </div>
+        
+        <footer>
+          <div class="image-container">
+            <img src="../images/rm.gif">
+          </div>
+        </footer>
+      </section>
+    </body>
+  </template>
+  
+  <script setup>
+  import { ref, onMounted } from 'vue';
+  import { supabase } from '../lib/supabaseClient';
+  
+  const name = ref('');
+  const comment = ref('');
+  const submissionStatus = ref(null);
+  const comments = ref([]);
+  const tableName = 'comments';
+  
+  function formatDate(dateString) {
+    return new Date(dateString).toLocaleDateString('en-US', {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric'
+    });
+  }
+  
+  async function submitComment() {
+    submissionStatus.value = "Submitting...";
+    try {
+      const { error } = await supabase.from(tableName).insert([{ name: name.value, comment: comment.value }]);
+      if (error) throw error;
+      submissionStatus.value = "Comment submitted successfully!";
+      name.value = '';
+      comment.value = '';
+      await getComments();
+    } catch (err) {
+      console.error("Error submitting comment:", err);
+      submissionStatus.value = "Error submitting comment. Please try again.";
     }
-
-    function closeModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.classList.remove('show');
-            setTimeout(() => {
-                modal.style.display = 'none';
-            }, 300);
-        }
+  }
+  
+  async function getComments() {
+    try {
+      const { data, error } = await supabase.from('comments').select('*').order('created_at', { ascending: false });
+      if (error) throw error;
+      comments.value = data;
+    } catch (err) {
+      console.error("Error fetching comments:", err);
+      submissionStatus.value = "Error loading comments.";
     }
-
-    document.getElementById('educationLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        openModal('educationModal');
-    });
-
-    document.getElementById('goalsLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        openModal('goalsModal');
-    });
-
-    document.getElementById('hobbiesLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        openModal('hobbiesModal');
-    });
-
-    document.getElementById('schoolsLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        openModal('schoolsModal');
-    });
-
-    document.querySelectorAll('.close-btn').forEach(button => {
-        button.addEventListener('click', function() {
-            const modal = this.closest('.modal');
-            if (modal) {
-                closeModal(modal.id);
-            }
-        });
-    });
-
- 
-    document.getElementById('learnMoreLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        openModal('aboutModal');
-    });
-
-    var swiper = new Swiper(".mySwiper", {
-    effect: "cards",
-    grabCursor: true,
-    loop: true,
+  }
+  
+  onMounted(() => {
+    getComments();
   });
-
-});
-
-
-</script>
-
+  </script>
+  
 
 <style>
 
