@@ -200,20 +200,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+ 
     document.getElementById('learnMoreLink').addEventListener('click', function(event) {
         event.preventDefault();
         openModal('aboutModal');
     });
-
-    // Swiper initialization
-    var swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true,
-        loop: true,
-    });
 });
 
+</script>
 
+<script>
+var swiper = new Swiper(".mySwiper", {
+    effect: "cards",
+    grabCursor: true,
+    loop: true,
+  });
 </script>
 
 
