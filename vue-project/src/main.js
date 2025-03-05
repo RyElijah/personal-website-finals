@@ -1,8 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import PersonalProfile from './components/PersonalProfile.vue';
+import router from './router';
 
 const app = createApp(App);
-app.component('personal-profile', PersonalProfile);
-
+app.use(router);
 app.mount('#app');
