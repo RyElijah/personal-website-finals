@@ -158,7 +158,7 @@
 
 
 <script>
-import Comments from './CommentsForm.vue';
+import Comments from './Comments.vue';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
