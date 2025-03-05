@@ -1,11 +1,4 @@
 <template>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css">  
-</head>
 <body>
     <section>
         <div class="circle"></div>
@@ -154,19 +147,15 @@
     </section>
 
  
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-var swiper = new Swiper(".mySwiper", {
-    effect: "cards",
-    grabCursor: true,
-    loop: true,
-  });
-  </script>
+
 
 </template>
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -219,13 +208,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
- 
     document.getElementById('learnMoreLink').addEventListener('click', function(event) {
         event.preventDefault();
         openModal('aboutModal');
     });
+
+    // Initialize Swiper
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        loop: true,
+    });
 });
+
 </script>
+
 
 <style>
 
