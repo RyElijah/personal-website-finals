@@ -158,6 +158,11 @@
 
 
 <script>
+
+import Swiper from 'swiper';
+import 'swiper/css/swiper-bundle.min.css';
+
+
 document.addEventListener('DOMContentLoaded', function() {
     function openModal(modalId) {
         const modal = document.getElementById(modalId);
