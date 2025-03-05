@@ -126,9 +126,9 @@
 
             
                 <ul class="sci">
-                    <li><a href="https://www.facebook.com/ryanelijah.luar/"><img src="images/efbi.png" alt="Facebook"></a></li>  
-                    <li><a href="https://www.linkedin.com/in/ryan-elijah-luar-a99171250/"><img src="images/linkedin.png" alt="LinkedIn"></a></li> 
-                    <li><a href="https://github.com/RyElijah"><img src="images/github1.png" alt="GitHub"></a></li> 
+                    <li><a href="https://www.facebook.com/ryanelijah.luar/"><img src="../components/images/efbi.png" alt="Facebook"></a></li>  
+                    <li><a href="https://www.linkedin.com/in/ryan-elijah-luar-a99171250/"><img src="../components/images/linkedin.png" alt="LinkedIn"></a></li> 
+                    <li><a href="https://github.com/RyElijah"><img src="../components/images/github1.png" alt="GitHub"></a></li> 
                 </ul>
             </div>
 
@@ -136,10 +136,10 @@
             <div class="imagebox">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/ryanpic1.jpg" alt="Image 1"></div>
-                        <div class="swiper-slide"><img src="images/ryanpic2.jpg" alt="Image 2"></div>
-                        <div class="swiper-slide"><img src="images/ryanpic3.jpg" alt="Image 3"></div>
-                        <div class="swiper-slide"><img src="images/ryanpic5.jpg" alt="Image 4"></div>
+                        <div class="swiper-slide"><img src="../components/images/ryanpic1.jpg" alt="Image 1"></div>
+                        <div class="swiper-slide"><img src="../components/images/ryanpic2.jpg" alt="Image 2"></div>
+                        <div class="swiper-slide"><img src="../components/images/ryanpic3.jpg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="../components/images/ryanpic5.jpg" alt="Image 4"></div>
                     </div>
                 </div>
             </div>
