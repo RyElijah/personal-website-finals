@@ -171,24 +171,37 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    document.getElementById('educationLink').addEventListener('click', function(event) {
+    // Helper function to attach event listeners safely
+    function safeAddEventListener(id, event, callback) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.addEventListener(event, callback);
+        }
+    }
+
+    safeAddEventListener('educationLink', 'click', function(event) {
         event.preventDefault();
         openModal('educationModal');
     });
 
-    document.getElementById('goalsLink').addEventListener('click', function(event) {
+    safeAddEventListener('goalsLink', 'click', function(event) {
         event.preventDefault();
         openModal('goalsModal');
     });
 
-    document.getElementById('hobbiesLink').addEventListener('click', function(event) {
+    safeAddEventListener('hobbiesLink', 'click', function(event) {
         event.preventDefault();
         openModal('hobbiesModal');
     });
 
-    document.getElementById('schoolsLink').addEventListener('click', function(event) {
+    safeAddEventListener('schoolsLink', 'click', function(event) {
         event.preventDefault();
         openModal('schoolsModal');
+    });
+
+    safeAddEventListener('learnMoreLink', 'click', function(event) {
+        event.preventDefault();
+        openModal('aboutModal');
     });
 
     document.querySelectorAll('.close-btn').forEach(button => {
@@ -200,21 +213,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
- 
-    document.getElementById('learnMoreLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        openModal('aboutModal');
-    });
+    // Initialize Swiper after DOM is loaded
+    setTimeout(() => {
+        if (document.querySelector(".mySwiper")) {
+            new Swiper(".mySwiper", {
+                effect: "cards",
+                grabCursor: true,
+                loop: true,
+            });
+        }
+    }, 100);
 });
+
 
 </script>
 
 <script>
-var swiper = new Swiper(".mySwiper", {
-    effect: "cards",
-    grabCursor: true,
-    loop: true,
-  });
+
 </script>
 
 
