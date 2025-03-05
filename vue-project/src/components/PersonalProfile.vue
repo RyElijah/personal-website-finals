@@ -171,21 +171,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function setupModalLink(linkId, modalId) {
-        const link = document.getElementById(linkId);
-        if (link) {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                openModal(modalId);
-            });
-        }
-    }
+    document.getElementById('educationLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        openModal('educationModal');
+    });
 
-    setupModalLink('educationLink', 'educationModal');
-    setupModalLink('goalsLink', 'goalsModal');
-    setupModalLink('hobbiesLink', 'hobbiesModal');
-    setupModalLink('schoolsLink', 'schoolsModal');
-    setupModalLink('learnMoreLink', 'aboutModal');
+    document.getElementById('goalsLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        openModal('goalsModal');
+    });
+
+    document.getElementById('hobbiesLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        openModal('hobbiesModal');
+    });
+
+    document.getElementById('schoolsLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        openModal('schoolsModal');
+    });
 
     document.querySelectorAll('.close-btn').forEach(button => {
         button.addEventListener('click', function() {
@@ -196,12 +200,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    document.getElementById('learnMoreLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        openModal('aboutModal');
+    });
+
+    // Swiper initialization
     var swiper = new Swiper(".mySwiper", {
         effect: "cards",
         grabCursor: true,
         loop: true,
     });
 });
+
 
 </script>
 
