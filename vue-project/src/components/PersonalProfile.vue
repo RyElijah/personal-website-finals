@@ -152,7 +152,7 @@
     <script src="js/modal.js"></script>
 </body>
 
-<Comments />
+
 
 </template>
 
